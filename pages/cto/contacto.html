@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #f5f5f5;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #008B8B;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #008B8B;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #e0ffff;
+            color: #555;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            border: 1px solid #aac;
+            border-radius: 8px;
+            padding: 14px 16px 12px;
+            margin: 16px 0;
+            background-color: #f8feff;
+        }
+
+        fieldset legend {
+            padding: 0 8px;
+            font-weight: bold;
+            color: #006f6f;
+        }
+
+        fieldset label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+
+        fieldset label:last-child {
+            margin-bottom: 0;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: auto;
+            margin: 0;
+        }
+
+        button {
+            padding: 10px;
+            width: 100%;
+            background-color: #008B8B;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="../../multimedia/img/imagenejemploespe.png" alt="ESPE" width="300">
+        <p><strong>Universidad de las Fuerzas Armadas</strong></p>
+    </header>
+    <nav>
+        <a href="../../index.html">
+            Home |
+        </a>
+        <a href="../sobremi/sobremi.html">
+            Sobre mí |</a>
+        <a href="../multimedia/multimedia.html">
+            Presentación |</a>
+        <a href="../horario/horario.html">
+            Horario |</a>
+        <a href="../contenido/contenido.html">
+            Contenido |</a>
+        <a href="#">
+            Contacto |</a>
+        <a href="../proyectos/proyectos.html">
+            Proyectos |</a>
+        <a href="../buscar/buscar.html">
+            Buscar |</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Contáctame</h2>
+
+            <form action="#" method="GET">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Materias</h2>
+            <label for="Asignartura">Asignatura:</label>
+            <select id="Asignatura" name="Asignatura">
+                <option value="Sistemas de Base de Datos">Sistemas de Base de Datos</option>
+                <option value="Interfaces y Multimedia">Interfaces y Multimedia</option>
+                <option value="Fundamentos de Sistemas Web">Fundamentos de Sistemas Web</option>
+                <option value="Métodos Numéricos">Métodos Numéricos</option>
+                <option value="Redes de Comunicación">Redes de Comunicación</option>
+                <option value="English">English</option>
+            </select>
+            <section>
+                <h2>Ejemplo</h2>
+
+                <form action="#" method="GET">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" required minlength="8" maxlength="8"
+                        title="La contraseña debe tener 8 caracteres">
+                    <label for="calendario">Fecha de estudio:</label>
+                    <input type="date" id="calendario" name="calendario" required>
+
+                    <br>
+                    <label for="hora">Hora:</label>
+                    <input type="time" id="hora" name="hora" required min="08:00" max="17:00" step="1800">
+                    <br>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </section>
+            <section>
+                <fieldset>
+                    <legend>Intereses</legend>
+                    <label><input type="checkbox" name="intereses" value="deportes"> Deportes</label>
+                    <label><input type="checkbox" name="intereses" value="musica"> Música</label>
+                    <label><input type="checkbox" name="intereses" value="arte"> Arte</label>
+                    <label><input type="checkbox" name="intereses" value="cine"> Cine</label>
+                    <label><input type="checkbox" name="intereses" value="lectura"> Lectura</label>
+                    <label><input type="checkbox" name="intereses" value="tecnologia"> Tecnología</label>
+                    <label><input type="checkbox" name="intereses" value="viajar"> Viajar</label>
+                    <label><input type="checkbox" name="intereses" value="cocina"> Cocina</label>
+                    <label><input type="checkbox" name="intereses" value="videojuegos"> Videojuegos</label>
+                    <label><input type="checkbox" name="intereses" value="naturaleza"> Naturaleza</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Frecuencia</legend>
+                    <label><input type="radio" name="frecuencia" value="diario" required> Diario</label>
+                    <label><input type="radio" name="frecuencia" value="semanal"> Semanal</label>
+                    <label><input type="radio" name="frecuencia" value="mensual"> Mensual</label>
+                </fieldset>
+            </section>
+            <section>
+                <form>
+                    <label for="codigo">Código (3 letras y 2 números, ej. ABC12)</label>
+                    <input type="text" id="codigo" name="codigo" pattern="[A-Za-z]{3}[0-9]{2}"
+                        title="Tres letras seguidas de dos números">
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+    </main>
+
+    <footer>
+        <h3>Encuéntrame en:</h3>
+
+        <img src="../../multimedia/img/linkedin.ico" width="20">
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+        <img src="../../multimedia/img/facebook.ico" width="20">
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+
+        <img src="../../multimedia/img/instagram.ico" width="20">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+
+        <img src="../../multimedia/img/tiktok.ico" width="20">
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
+
+        <p>Corina Acosta | ESPE</p>
+    </footer>
+
+</body>
+
+</html>
