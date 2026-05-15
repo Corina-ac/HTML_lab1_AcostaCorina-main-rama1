@@ -4,55 +4,180 @@
     <meta charset="UTF-8">
     <title>Buscar</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            color: #333;
-            background-color: #f0f8ff;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
         header {
             text-align: center;
-            padding: 10px;
+            padding: 20px 10px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+        header img {
+            max-width: 250px;
+            height: auto;
+        }
+
         nav {
-            background-color: #f5f5f5;
-            padding: 10px;
+            background-color: #008B8B;
+            padding: 15px;
             text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
         nav a {
-            margin: 0 10px;
+            margin: 0 15px;
             text-decoration: none;
+            color: white;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #e0ffff;
+        }
+
+        h1 {
+            font-size: 2.5em;
             color: #008B8B;
-        }
-        h1, h2, h3 {
-            color: #008B8B;
-        }
-        main {
-            padding: 20px;
-        }
-        footer {
-            background-color: #e0ffff;
-            color: #555;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            margin: 30px 0 20px;
+            font-weight: 700;
         }
-        form {
-            max-width: 400px;
-            margin: auto;
+
+        h2 {
+            font-size: 1.8em;
+            color: #008B8B;
+            text-align: center;
+            margin: 25px 0 15px;
+            font-weight: 600;
         }
-        input {
+
+        main {
+            flex: 1;
+            padding: 30px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
             width: 100%;
-            padding: 8px;
-            margin-top: 5px;
         }
+
+        section {
+            background-color: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #006f6f;
+            font-size: 1em;
+        }
+
+        input[type="text"],
+        input[type="search"],
+        select {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="search"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #008B8B;
+            box-shadow: 0 0 5px rgba(0, 139, 139, 0.3);
+        }
+
+        fieldset {
+            border: 2px solid #008B8B;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            background-color: #f8feff;
+        }
+
+        fieldset legend {
+            padding: 0 10px;
+            font-weight: 700;
+            color: #008B8B;
+            font-size: 1.1em;
+        }
+
+        fieldset label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 12px 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+            margin: 0;
+        }
+
         button {
-            padding: 10px;
             width: 100%;
+            padding: 14px;
             background-color: #008B8B;
             color: white;
             border: none;
+            border-radius: 6px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #006f6f;
+            transform: translateY(-2px);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        footer {
+            background-color: #008B8B;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -60,43 +185,97 @@
 <body>
 
 <header>
-    <h1>Buscar</h1>
+    <img src="../../multimedia/img/imagenejemploespe.png" alt="ESPE" width="300">
+    <p><strong>Universidad de las Fuerzas Armadas ESPE</strong></p>
 </header>
 
 <nav>
-    <a href="../../index.html">
-        Home |
-    </a>
-    <a href="../sobremi/sobremi.html">
-        Sobre mí |
-    </a>
-    <a href="../multimedia/multimedia.html">
-        Presentación |
-    </a>
-    <a href="../horario/horario.html">
-        Horario |
-    </a>
-    <a href="../contenido/contenido.html">
-        Contenido |
-    </a>
-    <a href="../cto/contacto.html">
-        Contacto |
-    </a>
-    <a href="../proyectos/proyectos.html">
-        Proyectos |
-    </a>
-    <a href="#">
-        Buscar |
-    </a>
+    <a href="../../index.html">Home</a>
+    <a href="../sobremi/sobremi.html">Sobre mí</a>
+    <a href="../multimedia/multimedia.html">Presentación</a>
+    <a href="../horario/horario.html">Horario</a>
+    <a href="../contenido/contenido.html">Contenido</a>
+    <a href="../cto/contacto.html">Contacto</a>
+    <a href="../proyectos/proyectos.html">Proyectos</a>
+    <a href="#">Buscar</a>
 </nav>
 
 <main>
-    <form method="GET">
-        <label for="q">Buscar:</label>
-        <input type="text" id="q" name="q">
-        <button type="submit">Buscar</button>
-    </form>
+    <h1>Buscador</h1>
+
+    <!-- FORMULARIO 1: BÚSQUEDA SIMPLE -->
+    <section>
+        <h2>Búsqueda Rápida</h2>
+        <div class="search-container">
+            <form method="GET">
+                <label for="q">Buscar en el sitio:</label>
+                <input type="search" id="q" name="q" 
+                       placeholder="Ingrese una palabra clave..." required>
+                <button type="submit">🔍 Buscar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FORMULARIO 2: BÚSQUEDA AVANZADA -->
+    <section>
+        <h2>Búsqueda Avanzada</h2>
+        <form method="GET">
+            <label for="palabra">Palabra Clave:</label>
+            <input type="text" id="palabra" name="palabra" 
+                   placeholder="Ej: formularios HTML" required>
+
+            <label for="categoria">Categoría:</label>
+            <select id="categoria" name="categoria" required>
+                <option value="">-- Selecciona una categoría --</option>
+                <option value="materias">Materias</option>
+                <option value="profesores">Profesores</option>
+                <option value="horarios">Horarios</option>
+                <option value="proyectos">Proyectos</option>
+                <option value="recursos">Recursos</option>
+            </select>
+
+            <label for="fecha_desde">Fecha desde:</label>
+            <input type="date" id="fecha_desde" name="fecha_desde">
+
+            <label for="fecha_hasta">Fecha hasta:</label>
+            <input type="date" id="fecha_hasta" name="fecha_hasta">
+
+            <button type="submit">Buscar Avanzado</button>
+        </form>
+    </section>
+
+    <!-- FORMULARIO 3: BÚSQUEDA POR FILTROS -->
+    <section>
+        <h2>Búsqueda por Filtros</h2>
+        <form method="GET">
+            <fieldset>
+                <legend>Tipo de Contenido</legend>
+                <label><input type="checkbox" name="tipo" value="articulos"> Artículos</label>
+                <label><input type="checkbox" name="tipo" value="videos"> Videos</label>
+                <label><input type="checkbox" name="tipo" value="documentos"> Documentos</label>
+                <label><input type="checkbox" name="tipo" value="imagenes"> Imágenes</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Nivel de Dificultad</legend>
+                <label><input type="radio" name="dificultad" value="basico"> Básico</label>
+                <label><input type="radio" name="dificultad" value="intermedio"> Intermedio</label>
+                <label><input type="radio" name="dificultad" value="avanzado"> Avanzado</label>
+            </fieldset>
+
+            <button type="submit">Aplicar Filtros</button>
+        </form>
+    </section>
+
 </main>
+
+<footer>
+    <p>&copy; 2025 - Universidad de las Fuerzas Armadas ESPE | Sistema de Búsqueda</p>
+</footer>
+
+</body>
+
+</html>
 
 </body>
 </html>
