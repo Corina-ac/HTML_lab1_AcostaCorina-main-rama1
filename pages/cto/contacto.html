@@ -6,97 +6,64 @@
     <title>Contacto</title>
 
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f5f5f5;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
-            min-height: 100vh;
         }
 
         header {
             text-align: center;
-            padding: 20px 10px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            background-color: #fff;
+            border-bottom: 1px solid #ccc;
         }
 
         header img {
-            max-width: 250px;
-            height: auto;
+            max-width: 200px;
         }
 
         nav {
             background-color: #008B8B;
-            padding: 15px;
+            padding: 10px;
             text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
-            margin: 0 15px;
+            margin: 0 10px;
             text-decoration: none;
             color: white;
-            font-weight: 500;
-            transition: color 0.3s;
         }
 
         nav a:hover {
-            color: #e0ffff;
+            text-decoration: underline;
         }
 
-        h1 {
-            font-size: 2.5em;
+        h1, h2 {
             color: #008B8B;
             text-align: center;
-            margin: 30px 0 20px;
-            font-weight: 700;
-        }
-
-        h2 {
-            font-size: 1.8em;
-            color: #008B8B;
-            text-align: center;
-            margin: 25px 0 15px;
-            font-weight: 600;
-        }
-
-        h3 {
-            font-size: 1.3em;
-            color: #006f6f;
-            margin: 15px 0 10px;
         }
 
         main {
-            padding: 30px 20px;
-            max-width: 1000px;
+            padding: 20px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
         section {
             background-color: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        form {
-            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
         }
 
         label {
             display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-weight: 600;
-            color: #006f6f;
-            font-size: 1em;
+            margin-top: 10px;
+            margin-bottom: 4px;
+            font-weight: bold;
         }
 
         input[type="text"],
@@ -108,107 +75,61 @@
         select,
         textarea {
             width: 100%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 2px solid #ddd;
-            border-radius: 6px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
             font-size: 1em;
             font-family: inherit;
-            transition: border-color 0.3s;
-        }
-
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="password"]:focus,
-        input[type="date"]:focus,
-        input[type="time"]:focus,
-        input[type="tel"]:focus,
-        select:focus,
-        textarea:focus {
-            outline: none;
-            border-color: #008B8B;
-            box-shadow: 0 0 5px rgba(0, 139, 139, 0.3);
+            box-sizing: border-box;
         }
 
         textarea {
             resize: vertical;
-            min-height: 120px;
+            min-height: 100px;
         }
 
         fieldset {
-            border: 2px solid #008B8B;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            background-color: #f8feff;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 15px 0;
         }
 
         fieldset legend {
-            padding: 0 10px;
-            font-weight: 700;
+            font-weight: bold;
             color: #008B8B;
-            font-size: 1.1em;
         }
 
         fieldset label {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 12px 0;
             font-weight: normal;
+            margin: 6px 0;
             cursor: pointer;
-        }
-    
-     fieldset label {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            margin: 12px 0;
-            font-weight: normal;
-            cursor: pointer;
-        }
-
-        input[type="checkbox"],
-        input[type="radio"] {
-            width: 18px;
-            height: 18px;
-            cursor: pointer;
-            margin: 0;
         }
 
         button {
             width: 100%;
-            padding: 14px;
+            padding: 10px;
             background-color: #008B8B;
             color: white;
             border: none;
-            border-radius: 6px;
-            font-size: 1.1em;
-            font-weight: 600;
+            font-size: 1em;
             cursor: pointer;
-            transition: background-color 0.3s, transform 0.2s;
-            margin-top: 10px;
+            margin-top: 8px;
         }
 
         button:hover {
             background-color: #006f6f;
-            transform: translateY(-2px);
-        }
-
-        button:active {
-            transform: translateY(0);
         }
 
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         footer {
             background-color: #008B8B;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 30px;
+            padding: 15px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -233,12 +154,11 @@
     <main>
         <h1>Formularios de Contacto</h1>
 
-        <!-- FORMULARIO 1: CONTACTO SIMPLE -->
         <section>
             <h2>1. Formulario de Contacto</h2>
             <p style="color: #666; margin-bottom: 20px;"><em>Envíanos tu mensaje directo</em></p>
 
-            <form action="#" method="GET">
+            <form action="#" method="GET">}
                 <div class="form-group">
                     <label for="contacto_nombre">Nombre Completo:</label>
                     <input type="text" id="contacto_nombre" name="contacto_nombre" 
@@ -267,7 +187,6 @@
             </form>
         </section>
 
-        <!-- FORMULARIO 2: REGISTRO DE DATOS PERSONALES -->
         <section>
             <h2>2. Formulario de Registro</h2>
             <p style="color: #666; margin-bottom: 20px;"><em>Completa tus datos personales</em></p>
@@ -310,7 +229,6 @@
             </form>
         </section>
 
-        <!-- FORMULARIO 3: SELECCIÓN DE MATERIAS -->
         <section>
             <h2>3. Formulario de Selección de Materias</h2>
             <p style="color: #666; margin-bottom: 20px;"><em>Elige la materia sobre la que deseas hacer consultas</em></p>
@@ -339,7 +257,6 @@
             </form>
         </section>
 
-        <!-- FORMULARIO 4: PLANIFICACIÓN DE ESTUDIO -->
         <section>
             <h2>4. Formulario de Planificación de Estudio</h2>
             <p style="color: #666; margin-bottom: 20px;"><em>Registra tu horario y fecha de estudio</em></p>
@@ -372,7 +289,6 @@
             </form>
         </section>
 
-        <!-- FORMULARIO 5: PREFERENCIAS E INTERESES -->
         <section>
             <h2>5. Formulario de Preferencias e Intereses</h2>
             <p style="color: #666; margin-bottom: 20px;"><em>Selecciona tus intereses académicos</em></p>
@@ -414,6 +330,7 @@
                 <button type="submit">Guardar Preferencias</button>
             </form>
         </section>
+        
 
     </main>
             <section>
