@@ -1,24 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<style>
-     * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-    header {
-            text-align: center;
-            padding: 20px 10px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-    body {
+    <title>Buzón de Sugerencias - ESPE</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: #333;
             background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
@@ -26,34 +14,62 @@
             display: flex;
             flex-direction: column;
         }
-
-    h1 {
-            font-size: 2.5em;
-            color: #008B8B;
-            text-align: center;
-            margin-bottom: 10px;
-            font-weight: 700;
-        }
-
-</style>
-    
-
+        header { text-align: center; padding: 20px 10px; background-color: #ffffff; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        header img { max-width: 260px; height: auto; }
+        nav { background-color: #008B8B; padding: 12px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 10px; font-weight: 500; }
+        nav a:hover { color: #e0ffff; }
+        main { flex: 1; padding: 30px 20px; max-width: 900px; margin: 0 auto; width: 100%; }
+        section { background-color: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.08); }
+        h1 { font-size: 2em; color: #008B8B; text-align: center; margin-bottom: 10px; }
+        label { display: block; margin: 10px 0 6px; color: #006f6f; font-weight: 600; }
+        textarea { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 6px; font-family: inherit; resize: vertical; }
+        .form-actions { margin-top: 12px; display: flex; gap: 10px; justify-content: flex-end; }
+        button { padding: 10px 18px; background-color: #008B8B; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; }
+        button:hover { background-color: #006f6f; }
+        footer { background-color: #008B8B; color: white; text-align: center; padding: 18px; margin-top: 30px; }
+    </style>
+</head>
 <body>
     <header>
-        <h1>Buzon de sugerencia</h1>
+        <img src="../../multimedia/img/imagenejemploespe.png" alt="ESPE">
+        <p><strong>Universidad de las Fuerzas Armadas ESPE</strong></p>
     </header>
 
-    
-    <p><b>¿Tienes alguna sugerencia??</p>
-    <section>
-        <form action="#" method="get">
-            <label for="sugerencia">Tu sugerencia:</label>
-            <br>
-            <textarea id="sugerencia" name="sugerencia" rows="4" cols="50"></textarea>
-        
-            <br>
-            <button type="submit" >Enviar</button>
-        </form>
-    </section>
+    <nav>
+        <a href="../../index.html">Home</a>
+        <a href="../sobremi/sobremi.html">Sobre mí</a>
+        <a href="../multimedia/multimedia.html">Presentación</a>
+        <a href="../horario/horario.html">Horario</a>
+        <a href="../contenido/contenido.html">Contenido</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="buzon.html">Buzón</a>
+        <a href="../proyectos/proyectos.html">Proyectos</a>
+        <a href="../buscar/buscar.html">Buscar</a>
+    </nav>
+
+    <main>
+        <section>
+            <h1>Buzón de Sugerencias</h1>
+            <p style="color:#666; margin-bottom:12px; text-align:center;"><em>Comparte tus ideas o mejoras para el sitio</em></p>
+
+            <form action="#" method="GET">
+                <label for="nombre">Nombre (opcional):</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" style="width:100%; padding:10px; border:2px solid #ddd; border-radius:6px;">
+
+                <label for="sugerencia">Tu sugerencia:</label>
+                <textarea id="sugerencia" name="sugerencia" rows="6" required placeholder="Escribe tu sugerencia aquí..."></textarea>
+
+                <div class="form-actions">
+                    <button type="reset" style="background:#ddd; color:#333;">Limpiar</button>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Corina Acosta | ESPE</p>
+    </footer>
 </body>
 </html>

@@ -3,266 +3,124 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Presentación Multimedia - ESPE</title>
+    <title> Presentacion ESPE</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #f0f8ff;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
-            background: linear-gradient(135deg, #f0f8ff 0%, #e0ffff 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-
         header {
             text-align: center;
-            padding: 20px 10px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
         }
-
-        header img {
-            max-width: 250px;
-            height: auto;
-        }
-
         nav {
-            background-color: #008B8B;
-            padding: 15px;
+            background-color: #f5f5f5;
+            padding: 10px;
             text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
         nav a {
+            margin: 0 10px;
             text-decoration: none;
-            color: white;
-            font-weight: 500;
-            transition: all 0.3s;
-            padding: 8px 12px;
-            border-radius: 4px;
-        }
-
-        nav a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: #e0ffff;
-        }
-
-        h1 {
-            font-size: 2.5em;
             color: #008B8B;
-            text-align: center;
-            margin: 30px 0 20px;
-            font-weight: 700;
         }
-
-        h2 {
-            font-size: 1.8em;
+        h1, h2, h3 {
             color: #008B8B;
-            text-align: center;
-            margin: 25px 0 15px;
-            font-weight: 600;
-            border-bottom: 3px solid #008B8B;
-            padding-bottom: 10px;
         }
-
         main {
-            flex: 1;
-            padding: 30px 20px;
-            max-width: 1000px;
-            margin: 0 auto;
-            width: 100%;
+            padding: 20px;
         }
-
         section {
-            background-color: white;
-            border-radius: 12px;
-            padding: 25px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
-
-        video,
-        audio,
         iframe {
             width: 100%;
             max-width: 560px;
-            height: auto;
-            border-radius: 8px;
-            margin: 20px auto;
+            height: 315px;
+            border: none;
             display: block;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px auto;
         }
-
         iframe.wiki-frame {
-            max-width: 100%;
-            height: 400px;
+            width: 650px;
+            height: 320px;
+            max-width: none;
         }
-
-        .media-container {
-            text-align: center;
-            margin: 20px 0;
-        }
-
         footer {
-            background-color: #008B8B;
-            color: white;
+            background-color: #e0ffff;
+            color: #555;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
-        }
-
-        footer h3 {
-            color: #e0ffff;
-            margin-bottom: 20px;
-        }
-
-        footer a {
-            color: #e0ffff;
-            text-decoration: none;
-            margin: 0 15px;
-            transition: color 0.3s;
-        }
-
-        footer a:hover {
-            color: white;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 15px 0;
-            flex-wrap: wrap;
-        }
-
-        .social-icons img {
-            width: 28px;
-            height: 28px;
-            transition: transform 0.3s;
-        }
-
-        .social-icons a {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin: 0;
-        }
-
-        .social-icons a:hover img {
-            transform: scale(1.2);
+            padding: 1cm;
+            margin-top: 20px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <img src="../../multimedia/img/imagenejemploespe.png" alt="ESPE" width="300">
-        <p><strong>Universidad de las Fuerzas Armadas ESPE</strong></p>
+        <figure>
+            <img src="../../multimedia/img/imagenejemploespe.png" alt="ESPE" width="300">
+            <figcaption><strong>Universidad de las fuerzas armadas</strong></figcaption>
+
+        </figure>
     </header>
 
     <nav>
-        <a href="../../index.html">Home</a>
-        <a href="../sobremi/sobremi.html">Sobre mí</a>
-        <a href="#">Presentación</a>
-        <a href="../horario/horario.html">Horario</a>
-        <a href="../contenido/contenido.html">Contenido</a>
-        <a href="../cto/contacto.html">Contacto</a>
-        <a href="../proyectos/proyectos.html">Proyectos</a>
-        <a href="../buscar/buscar.html">Buscar</a>
-        <a href="../login/login.html" style="background-color: #fff; color: #008B8B; font-weight: 700;">Login</a>
+        <a href="../../index.html">
+            Home |
+        </a>
+        <a href="../sobremi/sobremi.html">
+            Sobre mí |
+        </a>
+        <a href="#">
+            Presentación |
+        </a>
+        <a href="../horario/horario.html">
+            Horario |
+        </a>
+        <a href="../contenido/contenido.html">
+            Contenido |
+        </a>
+        <a href="../cto/contacto.html">
+            Contacto |
+        </a>
+        <a href="../proyectos/proyectos.html">
+            Proyectos |
+        </a>
+        <a href="../buscar/buscar.html">
+            Buscar |
+        </a>
     </nav>
-
-    <main>
-        <h1>Presentación Multimedia</h1>
-
+    <section>
+        <h2>Video:</h2>
+        <video src="../../multimedia/video/videoejemplo.mp4" controls width="400"
+            poster="../../multimedia/img/imagenejemploespe.png" muted loop>
+        </video>
         <section>
-            <h2>📹 Video Presentación</h2>
-            <div class="media-container">
-                <video src="../../multimedia/video/videoejemplo.mp4" controls 
-                       poster="../../multimedia/img/imagenejemploespe.png" 
-                       width="500">
-                    Tu navegador no soporta el elemento de video.
-                </video>
-            </div>
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/JhSVQDaUNg4?si=PkoG8FdSgVZU-XyN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe  style="text-align: center;" class="wiki-frame" width="650" height="320" src="https://es.wikipedia.org/wiki/Seguridad_inform%C3%A1tica"></iframe>
         </section>
 
-        <section>
-            <h2>🎬 Videos Relacionados</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 20px;">
-                Video educativo sobre ciberseguridad desde YouTube
-            </p>
-            <div class="media-container">
-                <iframe width="560" height="315" 
-                        src="https://www.youtube.com/embed/JhSVQDaUNg4?si=PkoG8FdSgVZU-XyN" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" 
-                        allowfullscreen>
-                </iframe>
-            </div>
-        </section>
+    </section>
 
-        <section>
-            <h2>📚 Recursos Educativos</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 20px;">
-                Información sobre Seguridad Informática desde Wikipedia
-            </p>
-            <div class="media-container">
-                <iframe class="wiki-frame" 
-                        src="https://es.wikipedia.org/wiki/Seguridad_inform%C3%A1tica" 
-                        title="Seguridad Informática - Wikipedia">
-                </iframe>
-            </div>
-        </section>
-
-        <section>
-            <h2>🎵 Audio Presentación</h2>
-            <p style="text-align: center; color: #666; margin-bottom: 20px;">
-                Escucha el audio de presentación
-            </p>
-            <div class="media-container">
-                <audio src="../../multimedia/audio/audioejemplo.mp3" controls loop preload="metadata"
-                       style="max-width: 400px;">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <section>
+        <h2>Música:</h2>
+        <audio src="../../multimedia/audio/audioejemplo.mp3" controls loop preload="metadata"></audio>
+    </section>
+    <footer id="contacto">
         <h3>Encuéntrame en mis redes sociales</h3>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a" target="_blank">
-                <img src="../../multimedia/img/linkedin.ico" alt="LinkedIn">
-                <span>LinkedIn</span>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-                <img src="../../multimedia/img/facebook.ico" alt="Facebook">
-                <span>Facebook</span>
-            </a>
-            <a href="https://www.instagram.com/" target="_blank">
-                <img src="../../multimedia/img/instagram.ico" alt="Instagram">
-                <span>Instagram</span>
-            </a>
-            <a href="https://www.tiktok.com/" target="_blank">
-                <img src="../../multimedia/img/tiktok.ico" alt="TikTok">
-                <span>TikTok</span>
-            </a>
-        </div>
-        <p style="margin-top: 20px; border-top: 1px solid #e0ffff; padding-top: 15px;">
-            &copy; 2025 - Universidad de las Fuerzas Armadas ESPE | Laboratorio HTML5 y Formularios
-        </p>
+        <img src="../../multimedia/img/linkedin.ico" width="20">
+        <a href="https://www.linkedin.com/in/corina-alejandra-acosta-oliva-1555ba28a" target="_blank">LinkedIn</a>
+
+        <img src="../../multimedia/img/facebook.ico" width="20" height="20">
+        <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+
+        <img src="../../multimedia/img/instagram.ico" width="20" height="20">
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <img src="../../multimedia/img/tiktok.ico" width="20" height="20">
+        <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
     </footer>
 </body>
 
